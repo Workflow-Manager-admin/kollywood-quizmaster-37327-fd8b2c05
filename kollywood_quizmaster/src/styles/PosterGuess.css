@@ -21,7 +21,7 @@
 .blurred-poster {
   width: 98%;
   border-radius: 9px;
-  filter: blur(7px) brightness(.79);
+  filter: blur(17px) brightness(.73); /* Increased blur for more of a challenge */
   margin-bottom: 10px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.13);
 }

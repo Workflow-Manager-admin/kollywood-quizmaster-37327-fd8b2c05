@@ -55,13 +55,19 @@ export async function fetchPopularTamilMovies(page = 1) {
     `api_key=${apiKey}` +
     `&with_original_language=ta` +
     `&sort_by=popularity.desc` +  // Most popular to less popular as pages increase
-    `&page=${page}`;
+    `&page=${page}` +
+    `&adult=false`; // Only fetch non-adult movies
 
   const response = await fetch(url);
   if (!response.ok) {
     throw new Error(`TMDb API error: ${response.statusText}`);
   }
-  return await response.json();
+  const data = await response.json();
+  // Extra safeguard: remove any accidental adult:true movies (in case TMDb includes them unexpectedly)
+  if (data.results && Array.isArray(data.results)) {
+    data.results = data.results.filter(movie => movie.adult === false);
+  }
+  return data;
 }
 
 // PUBLIC_INTERFACE

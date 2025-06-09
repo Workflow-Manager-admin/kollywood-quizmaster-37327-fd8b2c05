@@ -55,9 +55,8 @@ async function fetchModeratePosterQuestionsWithActorClues() {
   // Pages 1-2: popular, 3-5: moderate-popular; skip most obscure
   const randPage = Math.floor(Math.random() * 3) + 2; // page 2-4 for moderate
   const res = await fetchPopularTamilMovies(randPage);
-  let candidates = (res.results || []).filter(
-    m => m.poster_path && m.title && m.release_date
-  );
+  let candidates = (res.results || [])
+    .filter(m => m.poster_path && m.title && m.release_date && m.adult === false);
   // Randomly sample just 10 for quiz speed and variety
   candidates = candidates.sort(() => 0.5 - Math.random()).slice(0, 10);
 
