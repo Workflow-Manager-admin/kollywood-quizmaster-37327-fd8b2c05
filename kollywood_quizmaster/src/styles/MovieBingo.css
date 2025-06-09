@@ -1,0 +1,46 @@
+.movie-bingo-game {
+  max-width: 520px;
+  margin: 28px auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  color: var(--primary);
+  padding: 2em 1.5em 1em 1.5em;
+  text-align: center;
+}
+.bingo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin-bottom: 18px;
+}
+.bingo-box {
+  border: 2px solid #ff00c8;
+  border-radius: 7px;
+  background: #e2e7ff;
+  min-height: 82px;
+  padding: 14px 6px;
+  cursor: pointer;
+  box-shadow: 0 1px 6px #edd4ff44;
+  transition: background .12s;
+  user-select: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.bingo-selected {
+  background: #d904b6;
+  color: #fff;
+}
+.bingo-movie-title {
+  font-size: 1.01em;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.bingo-cat {
+  color: #4325ff; font-size: .93em;
+}
+@media (max-width: 500px) {
+  .movie-bingo-game { padding: 16px 4px; }
+  .bingo-grid { gap: 8px; }
+}

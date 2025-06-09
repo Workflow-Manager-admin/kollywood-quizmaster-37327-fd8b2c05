@@ -1,0 +1,36 @@
+.cast-combo-game {
+  max-width: 420px; margin: 34px auto;
+  padding: 1.8em 1em 1em 1em;
+  background: #fff;
+  border-radius: 12px; box-shadow: var(--shadow);
+  color: var(--primary); text-align: center;
+}
+.quiz-title { font-size: 1.38rem; font-weight: bold; color: var(--secondary); margin-bottom: 12px; }
+.cc-actors {
+  display: flex; flex-wrap: wrap; gap: 13px; margin-bottom: 11px;
+  justify-content: center;
+  margin-top: 6px;
+}
+.cc-actor {
+  background: #34288612; color: #cf1984; border-radius: 15px; padding: 6px 14px;
+  font-size: 1.12em; font-weight: 700;
+}
+.cc-instruction {
+  color: #5a55a5; font-size: 1.045em; margin: 9px 0 12px 0;
+  font-weight: 400;
+}
+.game-feedback {
+  color: #0baa38; font-weight: 700; margin: 7px 0;
+}
+.game-answer {
+  color: #d0146c; font-weight: 600; margin: 3px 0 10px 0;
+}
+.progress {
+  color: #78728c; margin-top: 8px;
+}
+.game-complete {
+  text-align: center;
+  font-size: 1.19em;
+  color: var(--secondary);
+  margin-top: 19px;
+}

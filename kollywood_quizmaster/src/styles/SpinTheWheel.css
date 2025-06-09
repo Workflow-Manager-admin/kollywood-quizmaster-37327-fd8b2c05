@@ -1,0 +1,24 @@
+.spin-wheel-game {
+  max-width: 410px;
+  margin: 38px auto;
+  padding: 2.15em 1em 1em 1em;
+  background: #fff;
+  border-radius: 12px; box-shadow: var(--shadow);
+  color: var(--primary);
+  text-align: center;
+}
+.quiz-title {
+  font-size: 1.38rem; font-weight: bold; color: var(--secondary); margin-bottom: 12px;
+}
+.wheel-result { margin-top: 18px; }
+.wheel-row {
+  display: flex; justify-content: space-between; margin: 9px 0;
+  font-weight: 600;
+}
+.wheel-label { color: #4325ff; }
+.wheel-value { color: #c1007b; }
+.wheel-form { margin-top: 16px; }
+.wheel-feedback { color: #c1007b; font-weight: 700; margin: 10px 0; }
+.correct-movie {
+  color: #0baa38; font-size: 1.12em; margin-top: 11px;
+}

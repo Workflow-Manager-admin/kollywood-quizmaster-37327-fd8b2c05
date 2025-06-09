@@ -2,9 +2,9 @@
 > react-kavia@0.1.0 start
 > react-scripts start
 
-(node:338) [DEP_WEBPACK_DEV_SERVER_ON_AFTER_SETUP_MIDDLEWARE] DeprecationWarning: 'onAfterSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+(node:4307) [DEP_WEBPACK_DEV_SERVER_ON_AFTER_SETUP_MIDDLEWARE] DeprecationWarning: 'onAfterSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
 (Use `node --trace-deprecation ...` to show where the warning was created)
-(node:338) [DEP_WEBPACK_DEV_SERVER_ON_BEFORE_SETUP_MIDDLEWARE] DeprecationWarning: 'onBeforeSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+(node:4307) [DEP_WEBPACK_DEV_SERVER_ON_BEFORE_SETUP_MIDDLEWARE] DeprecationWarning: 'onBeforeSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
 Starting the development server...
 
 Compiled successfully!
@@ -21,3 +21,1216 @@ webpack compiled successfully
 Compiling...
 Compiled successfully!
 webpack compiled successfully
+Compiling...
+Failed to compile.
+
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+ERROR in ./src/App.js 10:0-84
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+
+ERROR in ./src/App.js 12:0-28
+Module not found: Error: Can't resolve './styles/Theme.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+
+ERROR in ./src/App.js 13:0-41
+Module not found: Error: Can't resolve './components/Navbar' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+
+ERROR in ./src/App.js 14:0-34
+Module not found: Error: Can't resolve './pages/Login' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+
+ERROR in ./src/App.js 15:0-42
+Module not found: Error: Can't resolve './pages/Dashboard' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+
+ERROR in ./src/App.js 16:0-46
+Module not found: Error: Can't resolve './pages/PosterGuess' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+
+ERROR in ./src/App.js 17:0-62
+Module not found: Error: Can't resolve './pages/CharacterMovieMatch' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+
+ERROR in ./src/App.js 18:0-44
+Module not found: Error: Can't resolve './pages/MovieBingo' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+
+ERROR in ./src/App.js 19:0-50
+Module not found: Error: Can't resolve './pages/MovieTimeline' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+
+ERROR in ./src/App.js 20:0-48
+Module not found: Error: Can't resolve './pages/SpinTheWheel' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+
+ERROR in ./src/App.js 21:0-42
+Module not found: Error: Can't resolve './pages/CastCombo' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+
+ERROR in ./src/App.js 22:0-50
+Module not found: Error: Can't resolve './pages/ResultDisplay' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+
+ERROR in ./src/App.js 23:0-62
+Module not found: Error: Can't resolve './context/AuthContext' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+
+ERROR in ./src/App.js 24:0-53
+Module not found: Error: Can't resolve './context/QuizContext' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+
+webpack compiled with 14 errors
+Compiling...
+Failed to compile.
+
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+ERROR in ./src/App.js 10:0-84
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+
+ERROR in ./src/App.js 12:0-28
+Module not found: Error: Can't resolve './styles/Theme.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+
+ERROR in ./src/App.js 14:0-34
+Module not found: Error: Can't resolve './pages/Login' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+
+ERROR in ./src/App.js 15:0-42
+Module not found: Error: Can't resolve './pages/Dashboard' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+
+ERROR in ./src/App.js 16:0-46
+Module not found: Error: Can't resolve './pages/PosterGuess' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+
+ERROR in ./src/App.js 17:0-62
+Module not found: Error: Can't resolve './pages/CharacterMovieMatch' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+
+ERROR in ./src/App.js 18:0-44
+Module not found: Error: Can't resolve './pages/MovieBingo' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+
+ERROR in ./src/App.js 19:0-50
+Module not found: Error: Can't resolve './pages/MovieTimeline' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+
+ERROR in ./src/App.js 20:0-48
+Module not found: Error: Can't resolve './pages/SpinTheWheel' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+
+ERROR in ./src/App.js 21:0-42
+Module not found: Error: Can't resolve './pages/CastCombo' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+
+ERROR in ./src/App.js 22:0-50
+Module not found: Error: Can't resolve './pages/ResultDisplay' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+
+ERROR in ./src/App.js 23:0-62
+Module not found: Error: Can't resolve './context/AuthContext' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+
+ERROR in ./src/App.js 24:0-53
+Module not found: Error: Can't resolve './context/QuizContext' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+
+ERROR in ./src/components/Navbar.js 6:0-66
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/components'
+
+ERROR in ./src/components/Navbar.js 7:0-49
+Module not found: Error: Can't resolve '../context/AuthContext' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/components'
+
+ERROR in ./src/components/Navbar.js 8:0-30
+Module not found: Error: Can't resolve '../styles/Navbar.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/components'
+
+webpack compiled with 16 errors
+Compiling...
+Failed to compile.
+
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+ERROR in ./src/App.js 10:0-84
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+
+ERROR in ./src/App.js 12:0-28
+Module not found: Error: Can't resolve './styles/Theme.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+
+ERROR in ./src/App.js 14:0-34
+Module not found: Error: Can't resolve './pages/Login' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+
+ERROR in ./src/App.js 15:0-42
+Module not found: Error: Can't resolve './pages/Dashboard' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+
+ERROR in ./src/App.js 16:0-46
+Module not found: Error: Can't resolve './pages/PosterGuess' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+
+ERROR in ./src/App.js 17:0-62
+Module not found: Error: Can't resolve './pages/CharacterMovieMatch' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+
+ERROR in ./src/App.js 18:0-44
+Module not found: Error: Can't resolve './pages/MovieBingo' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+
+ERROR in ./src/App.js 19:0-50
+Module not found: Error: Can't resolve './pages/MovieTimeline' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+
+ERROR in ./src/App.js 20:0-48
+Module not found: Error: Can't resolve './pages/SpinTheWheel' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+
+ERROR in ./src/App.js 21:0-42
+Module not found: Error: Can't resolve './pages/CastCombo' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+
+ERROR in ./src/App.js 22:0-50
+Module not found: Error: Can't resolve './pages/ResultDisplay' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+
+ERROR in ./src/App.js 24:0-53
+Module not found: Error: Can't resolve './context/QuizContext' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+
+ERROR in ./src/components/Navbar.js 6:0-66
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/components'
+
+ERROR in ./src/components/Navbar.js 8:0-30
+Module not found: Error: Can't resolve '../styles/Navbar.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/components'
+
+webpack compiled with 14 errors
+Compiling...
+Failed to compile.
+
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+ERROR in ./src/App.js 10:0-84
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+
+ERROR in ./src/App.js 12:0-28
+Module not found: Error: Can't resolve './styles/Theme.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+
+ERROR in ./src/App.js 14:0-34
+Module not found: Error: Can't resolve './pages/Login' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+
+ERROR in ./src/App.js 15:0-42
+Module not found: Error: Can't resolve './pages/Dashboard' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+
+ERROR in ./src/App.js 16:0-46
+Module not found: Error: Can't resolve './pages/PosterGuess' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+
+ERROR in ./src/App.js 17:0-62
+Module not found: Error: Can't resolve './pages/CharacterMovieMatch' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+
+ERROR in ./src/App.js 18:0-44
+Module not found: Error: Can't resolve './pages/MovieBingo' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+
+ERROR in ./src/App.js 19:0-50
+Module not found: Error: Can't resolve './pages/MovieTimeline' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+
+ERROR in ./src/App.js 20:0-48
+Module not found: Error: Can't resolve './pages/SpinTheWheel' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+
+ERROR in ./src/App.js 21:0-42
+Module not found: Error: Can't resolve './pages/CastCombo' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+
+ERROR in ./src/App.js 22:0-50
+Module not found: Error: Can't resolve './pages/ResultDisplay' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+
+ERROR in ./src/components/Navbar.js 6:0-66
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/components'
+
+ERROR in ./src/components/Navbar.js 8:0-30
+Module not found: Error: Can't resolve '../styles/Navbar.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/components'
+
+webpack compiled with 13 errors
+Compiling...
+Failed to compile.
+
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+WARNING in [eslint] 
+src/pages/Login.js
+  Line 8:11:  'user' is assigned a value but never used  no-unused-vars
+
+ERROR in ./src/App.js 10:0-84
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+
+ERROR in ./src/App.js 12:0-28
+Module not found: Error: Can't resolve './styles/Theme.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+
+ERROR in ./src/App.js 15:0-42
+Module not found: Error: Can't resolve './pages/Dashboard' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+
+ERROR in ./src/App.js 16:0-46
+Module not found: Error: Can't resolve './pages/PosterGuess' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+
+ERROR in ./src/App.js 17:0-62
+Module not found: Error: Can't resolve './pages/CharacterMovieMatch' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+
+ERROR in ./src/App.js 18:0-44
+Module not found: Error: Can't resolve './pages/MovieBingo' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+
+ERROR in ./src/App.js 19:0-50
+Module not found: Error: Can't resolve './pages/MovieTimeline' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+
+ERROR in ./src/App.js 20:0-48
+Module not found: Error: Can't resolve './pages/SpinTheWheel' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+
+ERROR in ./src/App.js 21:0-42
+Module not found: Error: Can't resolve './pages/CastCombo' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+
+ERROR in ./src/App.js 22:0-50
+Module not found: Error: Can't resolve './pages/ResultDisplay' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+
+ERROR in ./src/components/Navbar.js 6:0-66
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/components'
+
+ERROR in ./src/components/Navbar.js 8:0-30
+Module not found: Error: Can't resolve '../styles/Navbar.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/components'
+
+ERROR in ./src/pages/Login.js 6:0-47
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/Login.js 8:0-29
+Module not found: Error: Can't resolve '../styles/Login.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+webpack compiled with 14 errors and 1 warning
+Compiling...
+Failed to compile.
+
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+WARNING in [eslint] 
+src/pages/Login.js
+  Line 8:11:  'user' is assigned a value but never used  no-unused-vars
+
+ERROR in ./src/App.js 10:0-84
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+
+ERROR in ./src/App.js 12:0-28
+Module not found: Error: Can't resolve './styles/Theme.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+
+ERROR in ./src/App.js 16:0-46
+Module not found: Error: Can't resolve './pages/PosterGuess' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+
+ERROR in ./src/App.js 17:0-62
+Module not found: Error: Can't resolve './pages/CharacterMovieMatch' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+
+ERROR in ./src/App.js 18:0-44
+Module not found: Error: Can't resolve './pages/MovieBingo' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+
+ERROR in ./src/App.js 19:0-50
+Module not found: Error: Can't resolve './pages/MovieTimeline' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+
+ERROR in ./src/App.js 20:0-48
+Module not found: Error: Can't resolve './pages/SpinTheWheel' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+
+ERROR in ./src/App.js 21:0-42
+Module not found: Error: Can't resolve './pages/CastCombo' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+
+ERROR in ./src/App.js 22:0-50
+Module not found: Error: Can't resolve './pages/ResultDisplay' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+
+ERROR in ./src/components/Navbar.js 6:0-66
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/components'
+
+ERROR in ./src/components/Navbar.js 8:0-30
+Module not found: Error: Can't resolve '../styles/Navbar.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/components'
+
+ERROR in ./src/pages/Dashboard.js 6:0-47
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/Dashboard.js 7:0-33
+Module not found: Error: Can't resolve '../styles/Dashboard.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/Login.js 6:0-47
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/Login.js 8:0-29
+Module not found: Error: Can't resolve '../styles/Login.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+webpack compiled with 15 errors and 1 warning
+Compiling...
+Failed to compile.
+
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+WARNING in [eslint] 
+src/pages/Login.js
+  Line 8:11:  'user' is assigned a value but never used  no-unused-vars
+
+ERROR in ./src/App.js 10:0-84
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+
+ERROR in ./src/App.js 12:0-28
+Module not found: Error: Can't resolve './styles/Theme.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+
+ERROR in ./src/App.js 17:0-62
+Module not found: Error: Can't resolve './pages/CharacterMovieMatch' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+
+ERROR in ./src/App.js 18:0-44
+Module not found: Error: Can't resolve './pages/MovieBingo' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+
+ERROR in ./src/App.js 19:0-50
+Module not found: Error: Can't resolve './pages/MovieTimeline' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+
+ERROR in ./src/App.js 20:0-48
+Module not found: Error: Can't resolve './pages/SpinTheWheel' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+
+ERROR in ./src/App.js 21:0-42
+Module not found: Error: Can't resolve './pages/CastCombo' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+
+ERROR in ./src/App.js 22:0-50
+Module not found: Error: Can't resolve './pages/ResultDisplay' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+
+ERROR in ./src/components/Navbar.js 6:0-66
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/components'
+
+ERROR in ./src/components/Navbar.js 8:0-30
+Module not found: Error: Can't resolve '../styles/Navbar.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/components'
+
+ERROR in ./src/pages/Dashboard.js 6:0-47
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/Dashboard.js 7:0-33
+Module not found: Error: Can't resolve '../styles/Dashboard.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/Login.js 6:0-47
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/Login.js 8:0-29
+Module not found: Error: Can't resolve '../styles/Login.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/PosterGuess.js 8:0-35
+Module not found: Error: Can't resolve '../styles/PosterGuess.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+webpack compiled with 15 errors and 1 warning
+Compiling...
+Failed to compile.
+
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+WARNING in [eslint] 
+src/pages/CharacterMovieMatch.js
+  Line 2:10:  'fetchPopularTamilMovies' is defined but never used  no-unused-vars
+
+src/pages/Login.js
+  Line 8:11:  'user' is assigned a value but never used  no-unused-vars
+
+ERROR in ./src/App.js 10:0-84
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+
+ERROR in ./src/App.js 12:0-28
+Module not found: Error: Can't resolve './styles/Theme.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+
+ERROR in ./src/App.js 18:0-44
+Module not found: Error: Can't resolve './pages/MovieBingo' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+
+ERROR in ./src/App.js 19:0-50
+Module not found: Error: Can't resolve './pages/MovieTimeline' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+
+ERROR in ./src/App.js 20:0-48
+Module not found: Error: Can't resolve './pages/SpinTheWheel' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+
+ERROR in ./src/App.js 21:0-42
+Module not found: Error: Can't resolve './pages/CastCombo' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+
+ERROR in ./src/App.js 22:0-50
+Module not found: Error: Can't resolve './pages/ResultDisplay' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+
+ERROR in ./src/components/Navbar.js 6:0-66
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/components'
+
+ERROR in ./src/components/Navbar.js 8:0-30
+Module not found: Error: Can't resolve '../styles/Navbar.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/components'
+
+ERROR in ./src/pages/CharacterMovieMatch.js 8:0-43
+Module not found: Error: Can't resolve '../styles/CharacterMovieMatch.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/Dashboard.js 6:0-47
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/Dashboard.js 7:0-33
+Module not found: Error: Can't resolve '../styles/Dashboard.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/Login.js 6:0-47
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/Login.js 8:0-29
+Module not found: Error: Can't resolve '../styles/Login.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/PosterGuess.js 8:0-35
+Module not found: Error: Can't resolve '../styles/PosterGuess.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+webpack compiled with 15 errors and 1 warning
+Compiling...
+Failed to compile.
+
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+WARNING in [eslint] 
+src/pages/CharacterMovieMatch.js
+  Line 2:10:  'fetchPopularTamilMovies' is defined but never used  no-unused-vars
+
+src/pages/Login.js
+  Line 8:11:  'user' is assigned a value but never used  no-unused-vars
+
+ERROR in ./src/App.js 10:0-84
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+
+ERROR in ./src/App.js 12:0-28
+Module not found: Error: Can't resolve './styles/Theme.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+
+ERROR in ./src/App.js 19:0-50
+Module not found: Error: Can't resolve './pages/MovieTimeline' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+
+ERROR in ./src/App.js 20:0-48
+Module not found: Error: Can't resolve './pages/SpinTheWheel' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+
+ERROR in ./src/App.js 21:0-42
+Module not found: Error: Can't resolve './pages/CastCombo' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+
+ERROR in ./src/App.js 22:0-50
+Module not found: Error: Can't resolve './pages/ResultDisplay' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+
+ERROR in ./src/components/Navbar.js 6:0-66
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/components'
+
+ERROR in ./src/components/Navbar.js 8:0-30
+Module not found: Error: Can't resolve '../styles/Navbar.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/components'
+
+ERROR in ./src/pages/CharacterMovieMatch.js 8:0-43
+Module not found: Error: Can't resolve '../styles/CharacterMovieMatch.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/Dashboard.js 6:0-47
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/Dashboard.js 7:0-33
+Module not found: Error: Can't resolve '../styles/Dashboard.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/Login.js 6:0-47
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/Login.js 8:0-29
+Module not found: Error: Can't resolve '../styles/Login.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/MovieBingo.js 8:0-34
+Module not found: Error: Can't resolve '../styles/MovieBingo.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/PosterGuess.js 8:0-35
+Module not found: Error: Can't resolve '../styles/PosterGuess.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+webpack compiled with 15 errors and 1 warning
+Compiling...
+Failed to compile.
+
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+WARNING in [eslint] 
+src/pages/CharacterMovieMatch.js
+  Line 2:10:  'fetchPopularTamilMovies' is defined but never used  no-unused-vars
+
+src/pages/Login.js
+  Line 8:11:  'user' is assigned a value but never used  no-unused-vars
+
+ERROR in ./src/App.js 10:0-84
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+
+ERROR in ./src/App.js 12:0-28
+Module not found: Error: Can't resolve './styles/Theme.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+
+ERROR in ./src/App.js 20:0-48
+Module not found: Error: Can't resolve './pages/SpinTheWheel' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+
+ERROR in ./src/App.js 21:0-42
+Module not found: Error: Can't resolve './pages/CastCombo' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+
+ERROR in ./src/App.js 22:0-50
+Module not found: Error: Can't resolve './pages/ResultDisplay' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+
+ERROR in ./src/components/Navbar.js 6:0-66
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/components'
+
+ERROR in ./src/components/Navbar.js 8:0-30
+Module not found: Error: Can't resolve '../styles/Navbar.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/components'
+
+ERROR in ./src/pages/CharacterMovieMatch.js 8:0-43
+Module not found: Error: Can't resolve '../styles/CharacterMovieMatch.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/Dashboard.js 6:0-47
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/Dashboard.js 7:0-33
+Module not found: Error: Can't resolve '../styles/Dashboard.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/Login.js 6:0-47
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/Login.js 8:0-29
+Module not found: Error: Can't resolve '../styles/Login.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/MovieBingo.js 8:0-34
+Module not found: Error: Can't resolve '../styles/MovieBingo.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/MovieTimeline.js 8:0-37
+Module not found: Error: Can't resolve '../styles/MovieTimeline.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/PosterGuess.js 8:0-35
+Module not found: Error: Can't resolve '../styles/PosterGuess.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+webpack compiled with 15 errors and 1 warning
+Compiling...
+Failed to compile.
+
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+WARNING in [eslint] 
+src/pages/CharacterMovieMatch.js
+  Line 2:10:  'fetchPopularTamilMovies' is defined but never used  no-unused-vars
+
+src/pages/Login.js
+  Line 8:11:  'user' is assigned a value but never used  no-unused-vars
+
+src/pages/SpinTheWheel.js
+  Line 2:10:  'fetchMovieDetails' is defined but never used        no-unused-vars
+  Line 2:29:  'fetchPopularTamilMovies' is defined but never used  no-unused-vars
+
+ERROR in ./src/App.js 10:0-84
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+
+ERROR in ./src/App.js 12:0-28
+Module not found: Error: Can't resolve './styles/Theme.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+
+ERROR in ./src/App.js 21:0-42
+Module not found: Error: Can't resolve './pages/CastCombo' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+
+ERROR in ./src/App.js 22:0-50
+Module not found: Error: Can't resolve './pages/ResultDisplay' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+
+ERROR in ./src/components/Navbar.js 6:0-66
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/components'
+
+ERROR in ./src/components/Navbar.js 8:0-30
+Module not found: Error: Can't resolve '../styles/Navbar.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/components'
+
+ERROR in ./src/pages/CharacterMovieMatch.js 8:0-43
+Module not found: Error: Can't resolve '../styles/CharacterMovieMatch.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/Dashboard.js 6:0-47
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/Dashboard.js 7:0-33
+Module not found: Error: Can't resolve '../styles/Dashboard.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/Login.js 6:0-47
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/Login.js 8:0-29
+Module not found: Error: Can't resolve '../styles/Login.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/MovieBingo.js 8:0-34
+Module not found: Error: Can't resolve '../styles/MovieBingo.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/MovieTimeline.js 8:0-37
+Module not found: Error: Can't resolve '../styles/MovieTimeline.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/PosterGuess.js 8:0-35
+Module not found: Error: Can't resolve '../styles/PosterGuess.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/SpinTheWheel.js 8:0-36
+Module not found: Error: Can't resolve '../styles/SpinTheWheel.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+webpack compiled with 15 errors and 1 warning
+Compiling...
+Failed to compile.
+
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+WARNING in [eslint] 
+src/pages/CharacterMovieMatch.js
+  Line 2:10:  'fetchPopularTamilMovies' is defined but never used  no-unused-vars
+
+src/pages/Login.js
+  Line 8:11:  'user' is assigned a value but never used  no-unused-vars
+
+src/pages/SpinTheWheel.js
+  Line 2:10:  'fetchMovieDetails' is defined but never used        no-unused-vars
+  Line 2:29:  'fetchPopularTamilMovies' is defined but never used  no-unused-vars
+
+ERROR in ./src/App.js 10:0-84
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+
+ERROR in ./src/App.js 12:0-28
+Module not found: Error: Can't resolve './styles/Theme.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+
+ERROR in ./src/App.js 22:0-50
+Module not found: Error: Can't resolve './pages/ResultDisplay' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+
+ERROR in ./src/components/Navbar.js 6:0-66
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/components'
+
+ERROR in ./src/components/Navbar.js 8:0-30
+Module not found: Error: Can't resolve '../styles/Navbar.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/components'
+
+ERROR in ./src/pages/CastCombo.js 7:0-33
+Module not found: Error: Can't resolve '../styles/CastCombo.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/CharacterMovieMatch.js 8:0-43
+Module not found: Error: Can't resolve '../styles/CharacterMovieMatch.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/Dashboard.js 6:0-47
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/Dashboard.js 7:0-33
+Module not found: Error: Can't resolve '../styles/Dashboard.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/Login.js 6:0-47
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/Login.js 8:0-29
+Module not found: Error: Can't resolve '../styles/Login.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/MovieBingo.js 8:0-34
+Module not found: Error: Can't resolve '../styles/MovieBingo.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/MovieTimeline.js 8:0-37
+Module not found: Error: Can't resolve '../styles/MovieTimeline.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/PosterGuess.js 8:0-35
+Module not found: Error: Can't resolve '../styles/PosterGuess.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/SpinTheWheel.js 8:0-36
+Module not found: Error: Can't resolve '../styles/SpinTheWheel.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+webpack compiled with 15 errors and 1 warning
+Compiling...
+Failed to compile.
+
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+WARNING in [eslint] 
+src/pages/CharacterMovieMatch.js
+  Line 2:10:  'fetchPopularTamilMovies' is defined but never used  no-unused-vars
+
+src/pages/Login.js
+  Line 8:11:  'user' is assigned a value but never used  no-unused-vars
+
+src/pages/SpinTheWheel.js
+  Line 2:10:  'fetchMovieDetails' is defined but never used        no-unused-vars
+  Line 2:29:  'fetchPopularTamilMovies' is defined but never used  no-unused-vars
+
+ERROR in ./src/App.js 10:0-84
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+
+ERROR in ./src/App.js 12:0-28
+Module not found: Error: Can't resolve './styles/Theme.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+
+ERROR in ./src/components/Navbar.js 6:0-66
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/components'
+
+ERROR in ./src/components/Navbar.js 8:0-30
+Module not found: Error: Can't resolve '../styles/Navbar.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/components'
+
+ERROR in ./src/pages/CastCombo.js 7:0-33
+Module not found: Error: Can't resolve '../styles/CastCombo.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/CharacterMovieMatch.js 8:0-43
+Module not found: Error: Can't resolve '../styles/CharacterMovieMatch.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/Dashboard.js 6:0-47
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/Dashboard.js 7:0-33
+Module not found: Error: Can't resolve '../styles/Dashboard.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/Login.js 6:0-47
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/Login.js 8:0-29
+Module not found: Error: Can't resolve '../styles/Login.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/MovieBingo.js 8:0-34
+Module not found: Error: Can't resolve '../styles/MovieBingo.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/MovieTimeline.js 8:0-37
+Module not found: Error: Can't resolve '../styles/MovieTimeline.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/PosterGuess.js 8:0-35
+Module not found: Error: Can't resolve '../styles/PosterGuess.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/ResultDisplay.js 8:0-47
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/ResultDisplay.js 9:0-37
+Module not found: Error: Can't resolve '../styles/ResultDisplay.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/SpinTheWheel.js 8:0-36
+Module not found: Error: Can't resolve '../styles/SpinTheWheel.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+webpack compiled with 16 errors and 1 warning
+Compiling...
+Failed to compile.
+
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+WARNING in [eslint] 
+src/pages/CharacterMovieMatch.js
+  Line 2:10:  'fetchPopularTamilMovies' is defined but never used  no-unused-vars
+
+src/pages/Login.js
+  Line 8:11:  'user' is assigned a value but never used  no-unused-vars
+
+src/pages/SpinTheWheel.js
+  Line 2:10:  'fetchMovieDetails' is defined but never used        no-unused-vars
+  Line 2:29:  'fetchPopularTamilMovies' is defined but never used  no-unused-vars
+
+ERROR in ./src/App.js 10:0-84
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+
+ERROR in ./src/components/Navbar.js 6:0-66
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/components'
+
+ERROR in ./src/components/Navbar.js 8:0-30
+Module not found: Error: Can't resolve '../styles/Navbar.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/components'
+
+ERROR in ./src/pages/CastCombo.js 7:0-33
+Module not found: Error: Can't resolve '../styles/CastCombo.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/CharacterMovieMatch.js 8:0-43
+Module not found: Error: Can't resolve '../styles/CharacterMovieMatch.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/Dashboard.js 6:0-47
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/Dashboard.js 7:0-33
+Module not found: Error: Can't resolve '../styles/Dashboard.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/Login.js 6:0-47
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/Login.js 8:0-29
+Module not found: Error: Can't resolve '../styles/Login.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/MovieBingo.js 8:0-34
+Module not found: Error: Can't resolve '../styles/MovieBingo.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/MovieTimeline.js 8:0-37
+Module not found: Error: Can't resolve '../styles/MovieTimeline.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/PosterGuess.js 8:0-35
+Module not found: Error: Can't resolve '../styles/PosterGuess.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/ResultDisplay.js 8:0-47
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/ResultDisplay.js 9:0-37
+Module not found: Error: Can't resolve '../styles/ResultDisplay.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/SpinTheWheel.js 8:0-36
+Module not found: Error: Can't resolve '../styles/SpinTheWheel.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+webpack compiled with 15 errors and 1 warning
+Compiling...
+Failed to compile.
+
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+WARNING in [eslint] 
+src/pages/CharacterMovieMatch.js
+  Line 2:10:  'fetchPopularTamilMovies' is defined but never used  no-unused-vars
+
+src/pages/Login.js
+  Line 8:11:  'user' is assigned a value but never used  no-unused-vars
+
+src/pages/SpinTheWheel.js
+  Line 2:10:  'fetchMovieDetails' is defined but never used        no-unused-vars
+  Line 2:29:  'fetchPopularTamilMovies' is defined but never used  no-unused-vars
+
+ERROR in ./src/App.js 10:0-84
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+
+ERROR in ./src/components/Navbar.js 6:0-66
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/components'
+
+ERROR in ./src/pages/CastCombo.js 7:0-33
+Module not found: Error: Can't resolve '../styles/CastCombo.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/CharacterMovieMatch.js 8:0-43
+Module not found: Error: Can't resolve '../styles/CharacterMovieMatch.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/Dashboard.js 6:0-47
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/Dashboard.js 7:0-33
+Module not found: Error: Can't resolve '../styles/Dashboard.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/Login.js 6:0-47
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/Login.js 8:0-29
+Module not found: Error: Can't resolve '../styles/Login.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/MovieBingo.js 8:0-34
+Module not found: Error: Can't resolve '../styles/MovieBingo.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/MovieTimeline.js 8:0-37
+Module not found: Error: Can't resolve '../styles/MovieTimeline.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/PosterGuess.js 8:0-35
+Module not found: Error: Can't resolve '../styles/PosterGuess.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/ResultDisplay.js 8:0-47
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/ResultDisplay.js 9:0-37
+Module not found: Error: Can't resolve '../styles/ResultDisplay.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/SpinTheWheel.js 8:0-36
+Module not found: Error: Can't resolve '../styles/SpinTheWheel.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+webpack compiled with 14 errors and 1 warning
+Compiling...
+Failed to compile.
+
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+WARNING in [eslint] 
+src/pages/CharacterMovieMatch.js
+  Line 2:10:  'fetchPopularTamilMovies' is defined but never used  no-unused-vars
+
+src/pages/Login.js
+  Line 8:11:  'user' is assigned a value but never used  no-unused-vars
+
+src/pages/SpinTheWheel.js
+  Line 2:10:  'fetchMovieDetails' is defined but never used        no-unused-vars
+  Line 2:29:  'fetchPopularTamilMovies' is defined but never used  no-unused-vars
+
+ERROR in ./src/App.js 10:0-84
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+
+ERROR in ./src/components/Navbar.js 6:0-66
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/components'
+
+ERROR in ./src/pages/CastCombo.js 7:0-33
+Module not found: Error: Can't resolve '../styles/CastCombo.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/CharacterMovieMatch.js 8:0-43
+Module not found: Error: Can't resolve '../styles/CharacterMovieMatch.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/Dashboard.js 6:0-47
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/Dashboard.js 7:0-33
+Module not found: Error: Can't resolve '../styles/Dashboard.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/Login.js 6:0-47
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/MovieBingo.js 8:0-34
+Module not found: Error: Can't resolve '../styles/MovieBingo.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/MovieTimeline.js 8:0-37
+Module not found: Error: Can't resolve '../styles/MovieTimeline.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/PosterGuess.js 8:0-35
+Module not found: Error: Can't resolve '../styles/PosterGuess.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/ResultDisplay.js 8:0-47
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/ResultDisplay.js 9:0-37
+Module not found: Error: Can't resolve '../styles/ResultDisplay.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/SpinTheWheel.js 8:0-36
+Module not found: Error: Can't resolve '../styles/SpinTheWheel.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+webpack compiled with 13 errors and 1 warning
+Compiling...
+Failed to compile.
+
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+WARNING in [eslint] 
+src/pages/CharacterMovieMatch.js
+  Line 2:10:  'fetchPopularTamilMovies' is defined but never used  no-unused-vars
+
+src/pages/Login.js
+  Line 8:11:  'user' is assigned a value but never used  no-unused-vars
+
+src/pages/SpinTheWheel.js
+  Line 2:10:  'fetchMovieDetails' is defined but never used        no-unused-vars
+  Line 2:29:  'fetchPopularTamilMovies' is defined but never used  no-unused-vars
+
+ERROR in ./src/App.js 10:0-84
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+
+ERROR in ./src/components/Navbar.js 6:0-66
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/components'
+
+ERROR in ./src/pages/CastCombo.js 7:0-33
+Module not found: Error: Can't resolve '../styles/CastCombo.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/CharacterMovieMatch.js 8:0-43
+Module not found: Error: Can't resolve '../styles/CharacterMovieMatch.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/Dashboard.js 6:0-47
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/Login.js 6:0-47
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/MovieBingo.js 8:0-34
+Module not found: Error: Can't resolve '../styles/MovieBingo.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/MovieTimeline.js 8:0-37
+Module not found: Error: Can't resolve '../styles/MovieTimeline.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/PosterGuess.js 8:0-35
+Module not found: Error: Can't resolve '../styles/PosterGuess.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/ResultDisplay.js 8:0-47
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/ResultDisplay.js 9:0-37
+Module not found: Error: Can't resolve '../styles/ResultDisplay.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/SpinTheWheel.js 8:0-36
+Module not found: Error: Can't resolve '../styles/SpinTheWheel.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+webpack compiled with 12 errors and 1 warning
+Compiling...
+Failed to compile.
+
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+WARNING in [eslint] 
+src/pages/CharacterMovieMatch.js
+  Line 2:10:  'fetchPopularTamilMovies' is defined but never used  no-unused-vars
+
+src/pages/Login.js
+  Line 8:11:  'user' is assigned a value but never used  no-unused-vars
+
+src/pages/SpinTheWheel.js
+  Line 2:10:  'fetchMovieDetails' is defined but never used        no-unused-vars
+  Line 2:29:  'fetchPopularTamilMovies' is defined but never used  no-unused-vars
+
+ERROR in ./src/App.js 10:0-84
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+
+ERROR in ./src/components/Navbar.js 6:0-66
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/components'
+
+ERROR in ./src/pages/CastCombo.js 7:0-33
+Module not found: Error: Can't resolve '../styles/CastCombo.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/CharacterMovieMatch.js 8:0-43
+Module not found: Error: Can't resolve '../styles/CharacterMovieMatch.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/Dashboard.js 6:0-47
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/Login.js 6:0-47
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/MovieBingo.js 8:0-34
+Module not found: Error: Can't resolve '../styles/MovieBingo.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/MovieTimeline.js 8:0-37
+Module not found: Error: Can't resolve '../styles/MovieTimeline.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/ResultDisplay.js 8:0-47
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/ResultDisplay.js 9:0-37
+Module not found: Error: Can't resolve '../styles/ResultDisplay.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/SpinTheWheel.js 8:0-36
+Module not found: Error: Can't resolve '../styles/SpinTheWheel.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+webpack compiled with 11 errors and 1 warning
+Compiling...
+Failed to compile.
+
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+WARNING in [eslint] 
+src/pages/CharacterMovieMatch.js
+  Line 2:10:  'fetchPopularTamilMovies' is defined but never used  no-unused-vars
+
+src/pages/Login.js
+  Line 8:11:  'user' is assigned a value but never used  no-unused-vars
+
+src/pages/SpinTheWheel.js
+  Line 2:10:  'fetchMovieDetails' is defined but never used        no-unused-vars
+  Line 2:29:  'fetchPopularTamilMovies' is defined but never used  no-unused-vars
+
+ERROR in ./src/App.js 10:0-84
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+
+ERROR in ./src/components/Navbar.js 6:0-66
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/components'
+
+ERROR in ./src/pages/CastCombo.js 7:0-33
+Module not found: Error: Can't resolve '../styles/CastCombo.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/Dashboard.js 6:0-47
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/Login.js 6:0-47
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/MovieBingo.js 8:0-34
+Module not found: Error: Can't resolve '../styles/MovieBingo.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/MovieTimeline.js 8:0-37
+Module not found: Error: Can't resolve '../styles/MovieTimeline.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/ResultDisplay.js 8:0-47
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/ResultDisplay.js 9:0-37
+Module not found: Error: Can't resolve '../styles/ResultDisplay.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/SpinTheWheel.js 8:0-36
+Module not found: Error: Can't resolve '../styles/SpinTheWheel.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+webpack compiled with 10 errors and 1 warning
+Compiling...
+Failed to compile.
+
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+WARNING in [eslint] 
+src/pages/CharacterMovieMatch.js
+  Line 2:10:  'fetchPopularTamilMovies' is defined but never used  no-unused-vars
+
+src/pages/Login.js
+  Line 8:11:  'user' is assigned a value but never used  no-unused-vars
+
+src/pages/SpinTheWheel.js
+  Line 2:10:  'fetchMovieDetails' is defined but never used        no-unused-vars
+  Line 2:29:  'fetchPopularTamilMovies' is defined but never used  no-unused-vars
+
+ERROR in ./src/App.js 10:0-84
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+
+ERROR in ./src/components/Navbar.js 6:0-66
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/components'
+
+ERROR in ./src/pages/CastCombo.js 7:0-33
+Module not found: Error: Can't resolve '../styles/CastCombo.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/Dashboard.js 6:0-47
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/Login.js 6:0-47
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/MovieTimeline.js 8:0-37
+Module not found: Error: Can't resolve '../styles/MovieTimeline.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/ResultDisplay.js 8:0-47
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/ResultDisplay.js 9:0-37
+Module not found: Error: Can't resolve '../styles/ResultDisplay.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/SpinTheWheel.js 8:0-36
+Module not found: Error: Can't resolve '../styles/SpinTheWheel.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+webpack compiled with 9 errors and 1 warning
+Compiling...
+Failed to compile.
+
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+WARNING in [eslint] 
+src/pages/CharacterMovieMatch.js
+  Line 2:10:  'fetchPopularTamilMovies' is defined but never used  no-unused-vars
+
+src/pages/Login.js
+  Line 8:11:  'user' is assigned a value but never used  no-unused-vars
+
+src/pages/SpinTheWheel.js
+  Line 2:10:  'fetchMovieDetails' is defined but never used        no-unused-vars
+  Line 2:29:  'fetchPopularTamilMovies' is defined but never used  no-unused-vars
+
+ERROR in ./src/App.js 10:0-84
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+
+ERROR in ./src/components/Navbar.js 6:0-66
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/components'
+
+ERROR in ./src/pages/CastCombo.js 7:0-33
+Module not found: Error: Can't resolve '../styles/CastCombo.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/Dashboard.js 6:0-47
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/Login.js 6:0-47
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/ResultDisplay.js 8:0-47
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/ResultDisplay.js 9:0-37
+Module not found: Error: Can't resolve '../styles/ResultDisplay.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/SpinTheWheel.js 8:0-36
+Module not found: Error: Can't resolve '../styles/SpinTheWheel.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+webpack compiled with 8 errors and 1 warning
+Compiling...
+Failed to compile.
+
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+WARNING in [eslint] 
+src/pages/CharacterMovieMatch.js
+  Line 2:10:  'fetchPopularTamilMovies' is defined but never used  no-unused-vars
+
+src/pages/Login.js
+  Line 8:11:  'user' is assigned a value but never used  no-unused-vars
+
+src/pages/SpinTheWheel.js
+  Line 2:10:  'fetchMovieDetails' is defined but never used        no-unused-vars
+  Line 2:29:  'fetchPopularTamilMovies' is defined but never used  no-unused-vars
+
+ERROR in ./src/App.js 10:0-84
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+
+ERROR in ./src/components/Navbar.js 6:0-66
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/components'
+
+ERROR in ./src/pages/CastCombo.js 7:0-33
+Module not found: Error: Can't resolve '../styles/CastCombo.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/Dashboard.js 6:0-47
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/Login.js 6:0-47
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/ResultDisplay.js 8:0-47
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/ResultDisplay.js 9:0-37
+Module not found: Error: Can't resolve '../styles/ResultDisplay.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+webpack compiled with 7 errors and 1 warning
+Compiling...
+Failed to compile.
+
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+WARNING in [eslint] 
+src/pages/CharacterMovieMatch.js
+  Line 2:10:  'fetchPopularTamilMovies' is defined but never used  no-unused-vars
+
+src/pages/Login.js
+  Line 8:11:  'user' is assigned a value but never used  no-unused-vars
+
+src/pages/SpinTheWheel.js
+  Line 2:10:  'fetchMovieDetails' is defined but never used        no-unused-vars
+  Line 2:29:  'fetchPopularTamilMovies' is defined but never used  no-unused-vars
+
+ERROR in ./src/App.js 10:0-84
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+
+ERROR in ./src/components/Navbar.js 6:0-66
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/components'
+
+ERROR in ./src/pages/Dashboard.js 6:0-47
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/Login.js 6:0-47
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/ResultDisplay.js 8:0-47
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/ResultDisplay.js 9:0-37
+Module not found: Error: Can't resolve '../styles/ResultDisplay.css' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+webpack compiled with 6 errors and 1 warning
+Compiling...
+Failed to compile.
+
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+WARNING in [eslint] 
+src/pages/CharacterMovieMatch.js
+  Line 2:10:  'fetchPopularTamilMovies' is defined but never used  no-unused-vars
+
+src/pages/Login.js
+  Line 8:11:  'user' is assigned a value but never used  no-unused-vars
+
+src/pages/SpinTheWheel.js
+  Line 2:10:  'fetchMovieDetails' is defined but never used        no-unused-vars
+  Line 2:29:  'fetchPopularTamilMovies' is defined but never used  no-unused-vars
+
+ERROR in ./src/App.js 10:0-84
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src'
+
+ERROR in ./src/components/Navbar.js 6:0-66
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/components'
+
+ERROR in ./src/pages/Dashboard.js 6:0-47
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/Login.js 6:0-47
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+ERROR in ./src/pages/ResultDisplay.js 8:0-47
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/kollywood-quizmaster-37327-fd8b2c05/kollywood_quizmaster/src/pages'
+
+webpack compiled with 5 errors and 1 warning

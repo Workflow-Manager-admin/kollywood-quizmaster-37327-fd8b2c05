@@ -1,0 +1,23 @@
+.result-display {
+  max-width: 440px;
+  margin: 68px auto 0 auto;
+  background: #fff;
+  border-radius: 13px; box-shadow: var(--shadow);
+  padding: 1.8em 1.6em 1.3em 1.6em;
+  text-align: center;
+  color: var(--primary);
+}
+.result-user {
+  font-size: 1.07em;
+  color: #c1007b;
+  margin-bottom: 5px;
+}
+.result-score {
+  color: #4325ff;
+  font-size: 1.38em;
+  margin-bottom: 16px;
+  font-weight: 800;
+}
+.btn {
+  margin-top: 20px;
+}

@@ -1,0 +1,67 @@
+:root {
+  --primary-bg: #fdfdfc;
+  --primary-fg: #121212;
+  --primary: #121212;
+  --secondary: #ff00c8;
+  --accent: #fdfdfc;
+  --navbar-bg: #ff00c8;
+  --shadow: 0 4px 16px rgba(18,18,18,0.12);
+}
+
+body, html {
+  background: var(--primary-bg);
+  color: var(--primary-fg);
+}
+
+.app {
+  min-height: 100vh;
+  background-color: var(--primary-bg);
+  color: var(--primary-fg);
+  font-family: 'Inter', 'Roboto', 'Helvetica', sans-serif;
+}
+
+.btn, .btn-large {
+  background: var(--secondary);
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  padding: 10px 20px;
+  font-weight: 600;
+  margin: 4px;
+  cursor: pointer;
+  letter-spacing: 0.02em;
+  box-shadow: var(--shadow);
+  transition: background .15s;
+}
+
+.btn:hover, .btn-large:hover {
+  background: #d904b6;
+}
+
+.btn-large {
+  font-size: 1.1rem;
+  padding: 12px 24px;
+}
+
+.input {
+  padding: 10px 12px;
+  border: 1px solid #cbcbd7;
+  border-radius: 5px;
+  outline: none;
+  font-size: 1.05rem;
+  margin-bottom: 8px;
+  width: 100%;
+  color: var(--primary-fg);
+}
+
+@media (max-width: 598px) {
+  .navbar-quiz, .navbar-container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 0;
+  }
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}

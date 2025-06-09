@@ -1,0 +1,70 @@
+.char-match-game {
+  max-width: 600px;
+  margin: 32px auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  color: var(--primary);
+  padding: 2.2em 1.1em 1em 1.1em;
+}
+.quiz-title {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: var(--secondary);
+  margin-bottom: 16px;
+  text-align: center;
+}
+.char-row {
+  display: flex;
+  gap: 18px;
+  margin-bottom: 12px;
+  justify-content: space-around;
+}
+.char-col, .match-col {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  width: 48%;
+}
+.char-list-label {
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #c1007b;
+}
+.char-draggable {
+  background: #ffcafc;
+  border-radius: 6px;
+  box-shadow: 0 1px 5px #ecd9f8;
+  padding: 8px 12px;
+  cursor: grab;
+  margin-bottom: 2px;
+  color: #633cb1;
+  font-size: 1.0em;
+}
+.movie-droptarget {
+  background: #efedfa;
+  border-radius: 6px;
+  min-height: 35px;
+  box-shadow: 0 1px 5px #eeeafa;
+  padding: 8px 12px;
+  margin-bottom: 3px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.placed-character {
+  color: #c1007b; font-weight: 600;
+}
+.game-controls {
+  text-align: center;
+  margin-top: 15px;
+}
+.btn-skip {
+  background: #121212; color: #fff;
+}
+.result-summary {
+  margin-top: 18px;
+  color: #cf1984;
+}
+.result-correct { color: #0baa38; }
+.result-incorrect { color: #f1356d; }

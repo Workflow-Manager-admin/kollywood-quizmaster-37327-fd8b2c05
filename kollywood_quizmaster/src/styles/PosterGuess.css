@@ -1,0 +1,83 @@
+.poster-guess-game {
+  max-width: 480px;
+  margin: 32px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  color: var(--primary);
+}
+.quiz-title {
+  font-size: 1.7rem;
+  font-weight: bold;
+  margin-bottom: 14px;
+  color: var(--secondary);
+  text-align: center;
+}
+.poster-container {
+  text-align: center;
+  margin-bottom: 16px;
+}
+.blurred-poster {
+  width: 98%;
+  border-radius: 9px;
+  filter: blur(7px) brightness(.79);
+  margin-bottom: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.13);
+}
+.clues-list { margin-bottom: 8px; }
+.clue {
+  background: #ccc2e5;
+  border-radius: 7px;
+  display: inline-block;
+  padding: 4px 14px;
+  color: #513579;
+  font-size: 1.03em;
+  margin: 2px 5px;
+}
+.guess-form {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 9px;
+}
+.guess-input {
+  flex: 1 1 180px;
+}
+.btn-skip {
+  background: #121212;
+  color: #fff;
+}
+.game-feedback, .game-answer {
+  font-size: 1.14em;
+  color: #d0146c;
+  font-weight: 600;
+  margin: 6px 0;
+}
+.progress {
+  font-size: .98em;
+  color: #78728c;
+  margin-top: 8px;
+  text-align: right;
+}
+.no-poster {
+  width: 180px; height: 240px;
+  background: #ececec;
+  border-radius: 8px;
+  display: flex; align-items: center; justify-content: center;
+  color: #aaa; font-size: 1.13em;
+  margin: 0 auto 10px auto;
+}
+.game-complete {
+  text-align: center;
+  font-size: 1.2em;
+  color: var(--secondary);
+}
+.api-error {
+  color: #f1356d; margin: 14px 0;
+}
+.game-loading {
+  color: #9b0888; font-size: 1.2em; text-align: center; margin: 30px 0;
+}

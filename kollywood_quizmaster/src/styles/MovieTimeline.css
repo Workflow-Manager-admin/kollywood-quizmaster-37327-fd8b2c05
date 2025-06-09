@@ -1,0 +1,28 @@
+.timeline-game {
+  max-width: 470px; margin: 38px auto;
+  background: #fff;
+  border-radius: 13px; box-shadow: var(--shadow);
+  color: var(--primary);
+  padding: 2em 1.24em 1em 1.24em;
+}
+.quiz-title {
+  font-size: 1.25rem; font-weight: bold;
+  color: var(--secondary); margin-bottom: 18px; text-align: center;
+}
+.timeline-list {
+  display: flex; flex-direction: column; gap: 13px; margin-bottom: 16px;
+}
+.timeline-item {
+  background: #e3e6fc;
+  border-radius: 7px;
+  box-shadow: 0 1px 5px #ecd9f8;
+  padding: 11px 18px;
+  cursor: grab;
+  font-size: 1.04em;
+  color: #324d7c;
+  display: flex; justify-content: space-between; align-items: center;
+}
+.timeline-date {
+  color: #c1007b; font-weight: bold; font-size: .98em;
+}
+.game-controls { text-align: center; margin-top: 18px; }
