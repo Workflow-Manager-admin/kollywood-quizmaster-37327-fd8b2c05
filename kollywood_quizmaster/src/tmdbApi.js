@@ -88,6 +88,22 @@ export async function fetchObscureTamilMovies(page = 1) {
   return await response.json();
 }
 
+/**
+ * Fetches cast/credits for a specific movie from TMDb.
+ * @param {number|string} movieId - The TMDb movie ID
+ * @returns {Promise<object>} The credits response object (with 'cast' array)
+ */
+// PUBLIC_INTERFACE
+export async function fetchMovieCredits(movieId) {
+  const apiKey = getTmdbApiKey();
+  const url = `${TMDB_BASE_URL}/movie/${movieId}/credits?api_key=${apiKey}&language=ta`;
+  const response = await fetch(url);
+  if (!response.ok) {
+    throw new Error(`TMDb API error (credits): ${response.statusText}`);
+  }
+  return await response.json();
+}
+
 // PUBLIC_INTERFACE
 export async function fetchMovieDetails(movieId) {
   /**

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { fetchObscureTamilMovies } from "../tmdbApi";
+import { fetchObscureTamilMovies, fetchMovieCredits } from "../tmdbApi";
 import { useQuiz } from "../context/QuizContext";
 import "../styles/PosterGuess.css";
 import BackButton from "../components/BackButton";
@@ -53,19 +53,40 @@ function getHardClues(movie) {
   return clues;
 }
 
-// Fetches "hard" (obscure) poster questions via TMDB discover, random mid/late page for maximal obscurity.
-// Also, optionally mixes the results.
-async function fetchHardPosterQuestions() {
-  // Choose a random high page (TMDb supports ~page 20-25, but often sparse)
+/**
+ * Fetches obscure Tamil movies and also fetches a main actor name (for the first clue) for each movie.
+ * Returns array of objects: [{...movie, actorClue: "<actor name or fallback>"}]
+ */
+async function fetchHardPosterQuestionsWithActorClues() {
   const randPage = Math.floor(Math.random() * 8) + 12; // pages 12-19 = more obscure
   const res = await fetchObscureTamilMovies(randPage);
   let candidates = (res.results || []).filter(
     m => m.poster_path && m.title && m.release_date
   );
-  // For each, try to fetch extra details for even harder/real clues
-  // But for speed, sample just 10
+  // sample just 10 for speed
   candidates = candidates.sort(() => 0.5 - Math.random()).slice(0, 10);
-  return candidates;
+
+  // For each movie, fetch the main actor (first in cast if available)
+  // Run requests in parallel, but throttle if rate limited!
+  const withActors = await Promise.all(
+    candidates.map(async (movie) => {
+      try {
+        const credits = await fetchMovieCredits(movie.id);
+        let clue;
+        if (Array.isArray(credits.cast) && credits.cast.length > 0) {
+          // Sort by order (sometimes not guaranteed), pick first actor with profile
+          const sorted = credits.cast.filter(x => !!x.name).sort((a, b) => (a.order ?? 999) - (b.order ?? 999));
+          clue = sorted[0]?.name || "Actor information not available";
+        } else {
+          clue = "Actor information not available";
+        }
+        return { ...movie, actorClue: clue };
+      } catch {
+        return { ...movie, actorClue: "Actor information not available" };
+      }
+    })
+  );
+  return withActors;
 }
 
 // PUBLIC_INTERFACE
@@ -86,7 +107,7 @@ export default function PosterGuess() {
       setLoading(true);
       setApiError("");
       try {
-        const movies = await fetchHardPosterQuestions();
+        const movies = await fetchHardPosterQuestionsWithActorClues();
         setQuestions(movies);
       } catch (e) {
         setApiError(e.message || "Error fetching movies.");
@@ -142,6 +163,12 @@ export default function PosterGuess() {
 
   const movie = questions[qIndex];
 
+  // Compose clues: actor is always first hint, then the rest
+  const clues = [
+    movie?.actorClue ? `Actor: ${movie.actorClue}` : "Actor information not available",
+    ...getHardClues(movie)
+  ];
+
   return (
     <div className="poster-guess-game">
       <div className="quiz-title">Blurred Poster Guess</div>
@@ -157,7 +184,7 @@ export default function PosterGuess() {
           <div className="no-poster">No Poster</div>
         )}
         <div className="clues-list">
-          {getHardClues(movie).map((clue, i) => (
+          {clues.map((clue, i) => (
             <div key={i} className="clue">{clue}</div>
           ))}
         </div>
