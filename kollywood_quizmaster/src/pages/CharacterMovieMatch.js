@@ -151,6 +151,15 @@ export default function CharacterMovieMatch() {
               onDrop={e => handleDrop(e, movie)}
               onDragOver={handleDragOver}
               tabIndex={0}
+              onKeyDown={e => {
+                // Allow Enter key to place currently "dragged" item for keyboard users
+                if (!isDone && dragValue && (e.key === 'Enter' || e.key === ' ')) {
+                  handleDrop(
+                    { preventDefault: () => {} },
+                    movie
+                  );
+                }
+              }}
             >
               <span className="movie-droptarget-label">{movie}</span>
               <span className={getPlacedCharacterClass(movie)}>
@@ -166,6 +175,11 @@ export default function CharacterMovieMatch() {
         <button
           className="btn"
           onClick={() => {
+            // If results already revealed, don't allow re-checking
+            if (isDone) {
+              setResultMsg("You've already checked the answers. Press Restart to play again!");
+              return;
+            }
             // If not all matches are filled, give explicit feedback
             if (
               Object.keys(matches).length < pairs.length
@@ -181,7 +195,7 @@ export default function CharacterMovieMatch() {
         >
           Check Answers
         </button>
-        <button className="btn btn-skip" onClick={resetGame}>
+        <button className="btn btn-skip" onClick={resetGame} disabled={isDone && Object.keys(matches).length < pairs.length}>
           Restart
         </button>
       </div>
