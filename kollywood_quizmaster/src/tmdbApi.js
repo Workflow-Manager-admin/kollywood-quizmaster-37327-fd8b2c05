@@ -17,12 +17,24 @@
 export const TMDB_BASE_URL = "https://api.themoviedb.org/3";
 export const TMDB_IMAGE_BASE_URL = "https://image.tmdb.org/t/p/w500";
 
-// Internal: fetch API key from environment
+/**
+ * Internal: fetch API key from environment, with robust developer-facing warnings.
+ * Never hardcodes a key. Only uses process.env.REACT_APP_TMDB_API_KEY at build time.
+ */
 function getTmdbApiKey() {
   const apiKey = process.env.REACT_APP_TMDB_API_KEY;
   if (!apiKey || apiKey === "CHANGEME" || apiKey.trim() === "") {
+    // Log error for developers in the console.
+    if (typeof window !== "undefined" && window.console && window.console.error) {
+      window.console.error(
+        "[Kollywood QuizMaster] ERROR: The TMDb API key is missing!\n" +
+        "Please create a .env file with REACT_APP_TMDB_API_KEY set. " +
+        "You may need to restart the development server after setting/changing .env.\n" +
+        "Refer to .env.example and README.md for instructions."
+      );
+    }
     throw new Error(
-      "TMDb API key is not set in environment variables (.env, env, or deployment config). Please set REACT_APP_TMDB_API_KEY."
+      "TMDb API key is not set in environment variables. Please set REACT_APP_TMDB_API_KEY in your .env file (see .env.example and README!)."
     );
   }
   return apiKey;
