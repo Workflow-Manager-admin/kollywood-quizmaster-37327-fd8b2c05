@@ -29,11 +29,14 @@ A web-based Kollywood Movie Quiz App with multiple challenging and fun quiz mode
 
 3. **Set up your TMDb API Key:**
    - Copy `.env.example` to `.env`
-   - Add your [TMDb API key](https://www.themoviedb.org/settings/api)  
-   Example:
+   - Add your [TMDb API key](https://www.themoviedb.org/settings/api)
+   - Example `.env` file:
+
    ```
-   REACT_APP_TMDB_API_KEY=your_tmdb_key
+   REACT_APP_TMDB_API_KEY=5bc67d3b06aecbd18121a3cbbc16eb59
    ```
+
+   (You can use the above demo key or insert your own)
 
 4. **Run Locally:**
    ```sh
