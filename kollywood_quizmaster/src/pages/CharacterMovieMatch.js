@@ -173,7 +173,22 @@ export default function CharacterMovieMatch() {
 
       {/* Result feedback message */}
       {isDone && (
-        <div className="game-feedback" style={{ fontSize: "1.13em", marginTop: 10 }}>
+        <div
+          className="game-feedback"
+          style={{ fontSize: "1.13em", marginTop: 10 }}
+          tabIndex={-1}
+          ref={el => {
+            // Accessibility: focus result area when shown
+            if (isDone && el) {
+              el.focus();
+              // Also scroll into view on mobile/long pages
+              setTimeout(() => {
+                el.scrollIntoView({ behavior: "smooth", block: "center" });
+              }, 200);
+            }
+          }}
+          aria-live="polite"
+        >
           {resultMsg}
         </div>
       )}
