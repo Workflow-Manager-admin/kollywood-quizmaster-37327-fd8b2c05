@@ -163,7 +163,22 @@ export default function CharacterMovieMatch() {
         </div>
       </div>
       <div className="game-controls">
-        <button className="btn" onClick={checkResults} disabled={isDone}>
+        <button
+          className="btn"
+          onClick={() => {
+            // If not all matches are filled, give explicit feedback
+            if (
+              Object.keys(matches).length < pairs.length
+            ) {
+              setResultMsg(
+                `⚠️ Match all characters to a movie before checking answers!`
+              );
+              return;
+            }
+            checkResults();
+          }}
+          disabled={isDone || Object.keys(matches).length < pairs.length}
+        >
           Check Answers
         </button>
         <button className="btn btn-skip" onClick={resetGame}>
