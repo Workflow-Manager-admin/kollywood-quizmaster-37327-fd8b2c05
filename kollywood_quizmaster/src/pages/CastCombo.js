@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useQuiz } from "../context/QuizContext";
 import "../styles/CastCombo.css";
+import { useNavigate } from "react-router-dom";
 
 // Demo questions (would need TMDb for perfect accuracy, but kept realistic)
 const quizData = [
@@ -73,11 +74,14 @@ export default function CastCombo() {
     }, 1200);
   }
 
+  const navigate = useNavigate();
+
   if (qIndex >= quizData.length) {
     return (
       <div className="game-complete">
         <div>Game Complete!</div>
         <a href="/result" className="btn btn-large">See Results</a>
+        <button className="btn btn-skip" style={{marginLeft:"10px"}} onClick={() => navigate("/")}>Back</button>
       </div>
     );
   }
@@ -85,6 +89,7 @@ export default function CastCombo() {
   return (
     <div className="cast-combo-game">
       <div className="quiz-title">Cast Combo</div>
+      <button className="btn btn-skip" style={{marginBottom: 10}} onClick={() => navigate("/")}>Back</button>
       <div className="cc-actors">
         {curr.actors.map(a => (
           <span key={a} className="cc-actor">{a}</span>

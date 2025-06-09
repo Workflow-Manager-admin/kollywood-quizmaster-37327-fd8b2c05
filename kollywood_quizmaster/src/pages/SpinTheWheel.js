@@ -2,15 +2,15 @@ import React, { useEffect, useState } from "react";
 import { fetchMovieDetails, fetchPopularTamilMovies } from "../tmdbApi";
 import { useQuiz } from "../context/QuizContext";
 import "../styles/SpinTheWheel.css";
+import { useNavigate } from "react-router-dom";
 
-// Simple mock actor/year pools for demo
+// Harder actor/year pools: more niche
 const actors = [
-  "Rajinikanth", "Vijay", "Kamal Haasan", "Nayanthara", "Trisha",
-  "Vikram", "Jyothika", "Dhanush", "Suriya", "Samantha"
+  "Pasupathy", "Aishwarya Rajesh", "Parthiban", "Samuthirakani", "Ramya Krishnan",
+  "Radharavi", "Yogi Babu", "Shamna Kasim", "Nasser", "Reema Sen"
 ];
-const years = [1999, 2005, 2010, 2015, 2017, 2019, 2022];
+const years = [2003, 2007, 2011, 2014, 2016, 2018, 2021];
 
-// PUBLIC_INTERFACE
 export default function SpinTheWheel() {
   const [spun, setSpun] = useState(false);
   const [actor, setActor] = useState("");
@@ -20,6 +20,7 @@ export default function SpinTheWheel() {
   const [correctMovie, setCorrectMovie] = useState("");
   const [done, setDone] = useState(false);
 
+  const navigate = useNavigate();
   const { finishQuiz, resetQuiz } = useQuiz();
 
   function spinWheel() {
@@ -28,18 +29,17 @@ export default function SpinTheWheel() {
     setFeedback("");
     setGuess("");
     setCorrectMovie("");
-    // Pick random for demo
+    // Pick random, more niche for demo
     setActor(actors[Math.floor(Math.random() * actors.length)]);
     setYear(years[Math.floor(Math.random() * years.length)]);
   }
 
   async function handleGuess(e) {
     e.preventDefault();
-    // For demo, accept any guess, reveal a movie
     setFeedback("Answer submitted!");
     setDone(true);
-    // Normally verify by searching TMDb for actor/year movies
-    setCorrectMovie("Sample Kollywood Blockbuster");
+    // Would normally check TMDb here
+    setCorrectMovie("We'll reveal the movie after quiz!");
     finishQuiz(1, { actor, year, userGuess: guess });
   }
 
@@ -48,9 +48,14 @@ export default function SpinTheWheel() {
     setSpun(false);
   }, [resetQuiz]);
 
+  function handleBack() {
+    navigate("/");
+  }
+
   return (
     <div className="spin-wheel-game">
       <div className="quiz-title">Spin the Wheel</div>
+      <button className="btn btn-skip" style={{marginBottom: 10}} onClick={handleBack}>Back</button>
       {!spun ? (
         <button className="btn btn-large" onClick={spinWheel}>
           Spin!
@@ -81,6 +86,7 @@ export default function SpinTheWheel() {
             Correct answer: <strong>{correctMovie}</strong>
             <br/>
             <a href="/result" className="btn btn-large">See Results</a>
+            <button className="btn btn-skip" style={{marginLeft:"10px"}} onClick={handleBack}>Back</button>
           </div>}
         </div>
       )}

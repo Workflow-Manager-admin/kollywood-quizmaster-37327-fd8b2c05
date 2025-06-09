@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { fetchPopularTamilMovies } from "../tmdbApi";
 import { useQuiz } from "../context/QuizContext";
 import "../styles/CharacterMovieMatch.css";
+import { useNavigate } from "react-router-dom";
 
 // Fake character data for demo (could fetch actor names from TMDb for real app)
 const characters = [
@@ -68,9 +69,15 @@ export default function CharacterMovieMatch() {
     setDropTargets(shuffleArray(dropTargets));
   }
 
+  const navigate = useNavigate();
+  function handleBack() {
+    navigate("/");
+  }
+
   return (
     <div className="char-match-game">
       <div className="quiz-title">Character-Movie Match</div>
+      <button className="btn btn-skip" style={{marginBottom: 10}} onClick={handleBack}>Back</button>
       <div className="char-row">
         <div className="char-col">
           <div className="char-list-label">Characters</div>

@@ -20,6 +20,7 @@ export default function ResultDisplay() {
       <div className="result-display">
         <div>No results to show. Please play a game first!</div>
         <button className="btn" onClick={handleBackToDashboard}>Back to Dashboard</button>
+        <button className="btn btn-skip" style={{marginLeft:"8px"}} onClick={handleBackToDashboard}>Back</button>
       </div>
     );
   }
@@ -45,6 +46,9 @@ export default function ResultDisplay() {
       <button className="btn btn-large" onClick={handleBackToDashboard}>
         Back to Dashboard
       </button>
+      <button className="btn btn-skip" style={{marginLeft:"8px"}} onClick={handleBackToDashboard}>
+        Back
+      </button>
     </div>
-  );
+  );  
 }
