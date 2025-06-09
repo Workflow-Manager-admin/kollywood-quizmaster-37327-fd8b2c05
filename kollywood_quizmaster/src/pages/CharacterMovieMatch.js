@@ -35,6 +35,9 @@ export default function CharacterMovieMatch() {
 
   const { finishQuiz, resetQuiz } = useQuiz();
 
+  // New state for result feedback
+  const [resultMsg, setResultMsg] = useState(""); // Shows correct count etc.
+
   useEffect(() => {
     // Use harder set, randomize slice window for slight unpredictability.
     const start = Math.floor(Math.random() * (charactersHard.length - 4));
@@ -43,6 +46,7 @@ export default function CharacterMovieMatch() {
     setDropTargets(shuffleArray(contestants.map(c => c.movie)));
     setMatches({});
     setIsDone(false);
+    setResultMsg("");
     resetQuiz();
   }, [resetQuiz]);
 
@@ -66,17 +70,58 @@ export default function CharacterMovieMatch() {
   }
 
   function checkResults() {
+    // Evaluate number of correct matches and highlight immediately
+    let correctCount = 0;
+    pairs.forEach(char => {
+      if (matches[char.name] === char.movie) correctCount++;
+    });
     setIsDone(true);
-    finishQuiz(0, { matches });
+
+    // Clear, enthusiastic feedback
+    if (correctCount === pairs.length) {
+      setResultMsg(`🎉 All correct! You got ${correctCount} / ${pairs.length} matches.`);
+    } else if (correctCount > 0) {
+      setResultMsg(
+        `👍 You got ${correctCount} / ${pairs.length} correct. Wrong matches are highlighted.`
+      );
+    } else {
+      setResultMsg(`❌ No correct matches. Try again or see the correct answers below!`);
+    }
+    finishQuiz(correctCount, { matches });
   }
 
   function resetGame() {
     setMatches({});
     setIsDone(false);
     setDropTargets(shuffleArray(dropTargets));
+    setResultMsg("");
   }
 
-  // No local back handler needed – use BackButton instead
+  // Visual highlight helpers for drop targets after checking answers
+  function getDroptargetClass(movie) {
+    if (!isDone) return "movie-droptarget";
+    const matchedChar = Object.keys(matches).find(key => matches[key] === movie);
+    // Find the character that was placed (if any), is it correct?
+    if (matchedChar && pairs.find(c => c.name === matchedChar && c.movie === movie)) {
+      return "movie-droptarget movie-correct";
+    }
+    if (matchedChar) {
+      return "movie-droptarget movie-wrong";
+    }
+    return "movie-droptarget";
+  }
+
+  function getPlacedCharacterClass(movie) {
+    if (!isDone) return "placed-character";
+    const matchedChar = Object.keys(matches).find(key => matches[key] === movie);
+    if (matchedChar && pairs.find(c => c.name === matchedChar && c.movie === movie)) {
+      return "placed-character correct-char";
+    }
+    if (matchedChar) {
+      return "placed-character wrong-char";
+    }
+    return "placed-character";
+  }
 
   return (
     <div className="char-match-game">
@@ -91,6 +136,7 @@ export default function CharacterMovieMatch() {
               key={char.name}
               draggable={!isDone}
               onDragStart={e => handleDragStart(e, char.name)}
+              style={isDone && (!matches[char.name] ? { opacity: 0.5 } : {})}
             >
               {char.name}
             </div>
@@ -101,12 +147,13 @@ export default function CharacterMovieMatch() {
           {dropTargets.map((movie, i) => (
             <div
               key={movie}
-              className="movie-droptarget"
+              className={getDroptargetClass(movie)}
               onDrop={e => handleDrop(e, movie)}
               onDragOver={handleDragOver}
+              tabIndex={0}
             >
               <span className="movie-droptarget-label">{movie}</span>
-              <span className="placed-character">
+              <span className={getPlacedCharacterClass(movie)}>
                 {Object.keys(matches).find(
                   key => matches[key] === movie
                 )}
@@ -123,6 +170,15 @@ export default function CharacterMovieMatch() {
           Restart
         </button>
       </div>
+
+      {/* Result feedback message */}
+      {isDone && (
+        <div className="game-feedback" style={{ fontSize: "1.13em", marginTop: 10 }}>
+          {resultMsg}
+        </div>
+      )}
+
+      {/* Detailed per-character feedback */}
       {isDone && (
         <div className="result-summary">
           {pairs.map(char =>

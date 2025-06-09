@@ -51,9 +51,26 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  transition: background 0.2s, border 0.2s;
+}
+.movie-droptarget.movie-correct {
+  background: #dbfcd1 !important;
+  border: 2px solid #21ba45;
+}
+.movie-droptarget.movie-wrong {
+  background: #ffe5e7 !important;
+  border: 2px solid #f1356d;
 }
 .placed-character {
   color: #c1007b; font-weight: 600;
+  transition: color 0.2s;
+}
+.placed-character.correct-char {
+  color: #21ba45;
+}
+.placed-character.wrong-char {
+  color: #f1356d;
+  text-decoration: line-through;
 }
 .game-controls {
   text-align: center;
