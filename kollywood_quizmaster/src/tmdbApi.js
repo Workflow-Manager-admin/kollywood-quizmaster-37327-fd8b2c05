@@ -40,30 +40,51 @@ function getTmdbApiKey() {
   return apiKey;
 }
 
-// PUBLIC_INTERFACE
+/**
+ * Fetches popular Tamil (Kollywood) movies from TMDb.
+ * Tamil language code: "ta"
+ * @param {number} page - Pagination for results
+ * @returns {Promise<object>} Response JSON
+ */
 export async function fetchPopularTamilMovies(page = 1) {
-  /**
-   * Fetches popular Tamil (Kollywood) movies from TMDb.
-   * Tamil language code: "ta"
-   * @param {number} page - Pagination for results
-   * @returns {Promise<object>} Response JSON
-   */
   const apiKey = getTmdbApiKey();
-
-  // Using discover/movie with language=ta and with_original_language=ta (Tamil)
   const url =
     `${TMDB_BASE_URL}/discover/movie?` +
     `api_key=${apiKey}` +
     `&with_original_language=ta` +
-    `&sort_by=popularity.desc` +
+    `&sort_by=popularity.desc` +  // Most popular
     `&page=${page}`;
 
   const response = await fetch(url);
-
   if (!response.ok) {
     throw new Error(`TMDb API error: ${response.statusText}`);
   }
+  return await response.json();
+}
 
+// PUBLIC_INTERFACE
+/**
+ * Fetches LESS popular (harder) Tamil movies from TMDb for challenging quizzes.
+ * Sorted by LOWER popularity (so, more niche/obscure/older).
+ * @param {number} page - Pagination offset for obscurity (higher=less popular)
+ * @returns {Promise<object>} Response JSON
+ */
+export async function fetchObscureTamilMovies(page = 1) {
+  const apiKey = getTmdbApiKey();
+  // Use sort_by=popularity.asc to get LEAST popular!
+  const url =
+    `${TMDB_BASE_URL}/discover/movie?` +
+    `api_key=${apiKey}` +
+    `&with_original_language=ta` +
+    `&sort_by=popularity.asc` +
+    // Without a vote_count filter, will get unvoted films. Add min vote threshold for some quality:
+    `&vote_count.gte=5` +
+    `&page=${page}`;
+  
+  const response = await fetch(url);
+  if (!response.ok) {
+    throw new Error(`TMDb API error: ${response.statusText}`);
+  }
   return await response.json();
 }
 

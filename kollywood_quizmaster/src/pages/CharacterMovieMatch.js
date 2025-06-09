@@ -1,24 +1,28 @@
 import React, { useEffect, useState } from "react";
-import { fetchPopularTamilMovies } from "../tmdbApi";
 import { useQuiz } from "../context/QuizContext";
 import "../styles/CharacterMovieMatch.css";
 import { useNavigate } from "react-router-dom";
 
-// Fake character data for demo (could fetch actor names from TMDb for real app)
-const characters = [
-  { name: "Chitti", movie: "Enthiran" },
-  { name: "Anniyan", movie: "Anniyan" },
-  { name: "Bhavani", movie: "Master" },
-  { name: "Aaranya Kaandam Sappai", movie: "Aaranya Kaandam" },
-  { name: "Vikram", movie: "Vikram" },
-  { name: "Vasool Raja", movie: "Vasool Raja MBBS" },
-  { name: "Subramani", movie: "16 Vayathinile" },
+// Harder: Less iconic character/movie combos
+const charactersHard = [
+  { name: "Parthasarathy", movie: "Naan Sirithal" },
+  { name: "Jeeva", movie: "Ko" },
+  { name: "Meera", movie: "Raja Rani" },
+  { name: "Sakthi", movie: "Attakathi" },
+  { name: "Arivu", movie: "Soorarai Pottru" },
+  { name: "Vedan", movie: "Master" },
+  { name: "Shakthi", movie: "Aruvi" },
 ];
 
 // Helper to shuffle array
 function shuffleArray(arr) {
   return [...arr].sort(() => Math.random() - 0.5);
 }
+
+/**
+ * Character-Movie Match using harder pairs (less iconic, more generic names)
+ * Shuffles both character order and movie options for subtlety.
+ */
 
 // PUBLIC_INTERFACE
 export default function CharacterMovieMatch() {
@@ -31,9 +35,11 @@ export default function CharacterMovieMatch() {
   const { finishQuiz, resetQuiz } = useQuiz();
 
   useEffect(() => {
-    // Mix character list and their movies
-    setPairs(shuffleArray(characters.slice(0, 5)));
-    setDropTargets(shuffleArray(characters.slice(0, 5).map(c => c.movie)));
+    // Use harder set, randomize slice window for slight unpredictability.
+    const start = Math.floor(Math.random() * (charactersHard.length - 4));
+    const contestants = shuffleArray(charactersHard.slice(start, start + 5));
+    setPairs(contestants);
+    setDropTargets(shuffleArray(contestants.map(c => c.movie)));
     setMatches({});
     setIsDone(false);
     resetQuiz();

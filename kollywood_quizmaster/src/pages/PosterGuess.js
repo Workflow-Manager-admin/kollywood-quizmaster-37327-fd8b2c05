@@ -1,42 +1,70 @@
 import React, { useEffect, useState } from "react";
-import { fetchPopularTamilMovies } from "../tmdbApi";
+import { fetchObscureTamilMovies } from "../tmdbApi";
 import { useQuiz } from "../context/QuizContext";
 import "../styles/PosterGuess.css";
 import { useNavigate } from "react-router-dom";
 
-// Harder: Subtle clue generator, with less info, placeholder for auto-clues if overview too revealing
+/**
+ * Generate more subtle/harder clues about the movie:
+ * - Only year, length of title (not count all letters), one or two random inner letters, sometimes production co or runtime if available.
+ * - Omit plot and genre completely.
+ * - Occasionally obfuscate with a deliberately vague clue.
+ */
 function getHardClues(movie) {
   const clues = [];
   if (!movie) return clues;
-  // Only give two clues, both subtle
+
+  // Always: year
   if (movie.release_date) {
     const year = movie.release_date.slice(0, 4);
     clues.push("Released in: " + year);
   }
+  // Give title letter count (no spaces) and a random letter (not first or last)
   if (movie.title) {
-    // Instead of first letter, give letter count + a random letter
-    const visibleChar = movie.title.replace(/[^a-zA-Z]/g, "")[1] || "?";
-    clues.push(`Title has ${movie.title.length} letters, 2nd is '${visibleChar.toUpperCase()}'`);
+    const rawTitle = movie.title.replace(/[^a-zA-Z]/g, "");
+    const len = rawTitle.length;
+    // random mid-letter, exclude index 0 or last
+    let randomIdx = 1 + Math.floor(Math.random() * Math.max(1, len - 2));
+    if (len <= 2) randomIdx = 1;
+    let clueLetter = rawTitle[randomIdx] || "?";
+    // Use only when len > 2
+    if (len > 2) {
+      clues.push(`Title has ${len} letters; letter ${randomIdx + 1} is '${clueLetter.toUpperCase()}'`);
+    } else if (len > 0) {
+      clues.push(`Short title (${len} letters)`);
+    }
   }
-  // If available, give a single generic genre clue (harder if omitted sometimes)
-  if (movie.genre_ids && Array.isArray(movie.genre_ids) && movie.genre_ids.length > 0) {
-    // Genres are just numbers, so omit detailed info!
-    //clues.push("Genre code: " + movie.genre_ids[0]); // deliberately unhelpful
+  // Extra subtle: Sometimes give production company name, if present
+  if (movie.production_companies && movie.production_companies.length > 0) {
+    // Reveal only the LAST word of first company (which is usually most generic)
+    const pc = movie.production_companies[0].name.split(" ");
+    clues.push("Production " + pc[pc.length - 1]);
   }
-  // Omit plot, as it gives away too much in many cases
+  // Rarely: runtime
+  if (movie.runtime && Math.random() < 0.4) {
+    clues.push("Runtime: about " + (movie.runtime > 95 ? "over 1.5 hrs" : "under 2 hrs"));
+  }
+  // With low chance add a fake out generic clue
+  if (Math.random() < 0.3) {
+    clues.push("Title starts with: '" + (movie.title ? movie.title[0].toUpperCase() : "?") + "'");
+  }
+  // No genre/overview clues
   return clues;
 }
 
-// Helper to fetch random less-popular movies (by picking from deeper pages, higher page number is less popular)
+// Fetches "hard" (obscure) poster questions via TMDB discover, random mid/late page for maximal obscurity.
+// Also, optionally mixes the results.
 async function fetchHardPosterQuestions() {
-  // Use TMDb discover: page 8-15 for niche/less popular movies
-  const randPage = Math.floor(Math.random() * 8) + 8; // pages 8-15
-  const res = await fetchPopularTamilMovies(randPage);
-  // Shuffle, return 10
-  let candidates = (res.results || []).filter(m => m.poster_path && m.title && m.release_date);
-  // Avoid blockbusters: skip first 3 most popular on page
-  if (candidates.length > 13) candidates = candidates.slice(3, 13);
-  return candidates.sort(() => 0.5 - Math.random()).slice(0, 10);
+  // Choose a random high page (TMDb supports ~page 20-25, but often sparse)
+  const randPage = Math.floor(Math.random() * 8) + 12; // pages 12-19 = more obscure
+  const res = await fetchObscureTamilMovies(randPage);
+  let candidates = (res.results || []).filter(
+    m => m.poster_path && m.title && m.release_date
+  );
+  // For each, try to fetch extra details for even harder/real clues
+  // But for speed, sample just 10
+  candidates = candidates.sort(() => 0.5 - Math.random()).slice(0, 10);
+  return candidates;
 }
 
 // PUBLIC_INTERFACE
