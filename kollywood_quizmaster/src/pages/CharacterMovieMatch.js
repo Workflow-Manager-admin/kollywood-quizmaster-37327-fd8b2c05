@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useQuiz } from "../context/QuizContext";
 import "../styles/CharacterMovieMatch.css";
+import BackButton from "../components/BackButton";
 import { useNavigate } from "react-router-dom";
 
 // Harder: Less iconic character/movie combos
@@ -75,15 +76,12 @@ export default function CharacterMovieMatch() {
     setDropTargets(shuffleArray(dropTargets));
   }
 
-  const navigate = useNavigate();
-  function handleBack() {
-    navigate("/");
-  }
+  // No local back handler needed – use BackButton instead
 
   return (
     <div className="char-match-game">
       <div className="quiz-title">Character-Movie Match</div>
-      <button className="btn btn-skip" style={{marginBottom: 10}} onClick={handleBack}>Back</button>
+      <BackButton />
       <div className="char-row">
         <div className="char-col">
           <div className="char-list-label">Characters</div>

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { fetchPopularTamilMovies } from "../tmdbApi";
 import { useQuiz } from "../context/QuizContext";
 import "../styles/MovieTimeline.css";
+import BackButton from "../components/BackButton";
 import { useNavigate } from "react-router-dom";
 
 // Util: insert item into array at new index
@@ -53,15 +54,12 @@ export default function MovieTimeline() {
     finishQuiz(isCorrect ? 5 : 0, { ordered: isCorrect });
   }
 
-  const navigate = useNavigate();
-  function handleBack() {
-    navigate("/");
-  }
+  // No local back handler needed, will use BackButton
 
   return (
     <div className="timeline-game">
       <div className="quiz-title">Movie Timeline Challenge</div>
-      <button className="btn btn-skip" style={{marginBottom: 10}} onClick={handleBack}>Back</button>
+      <BackButton />
       <div className="timeline-list">
         {movies.map((movie, idx) => (
           <div

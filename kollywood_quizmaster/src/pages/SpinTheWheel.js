@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { fetchMovieDetails, fetchPopularTamilMovies } from "../tmdbApi";
 import { useQuiz } from "../context/QuizContext";
 import "../styles/SpinTheWheel.css";
+import BackButton from "../components/BackButton";
 import { useNavigate } from "react-router-dom";
 
 // Harder actor/year pools: more niche
@@ -48,14 +49,12 @@ export default function SpinTheWheel() {
     setSpun(false);
   }, [resetQuiz]);
 
-  function handleBack() {
-    navigate("/");
-  }
+  // Use BackButton universally
 
   return (
     <div className="spin-wheel-game">
       <div className="quiz-title">Spin the Wheel</div>
-      <button className="btn btn-skip" style={{marginBottom: 10}} onClick={handleBack}>Back</button>
+      <BackButton />
       {!spun ? (
         <button className="btn btn-large" onClick={spinWheel}>
           Spin!
@@ -86,7 +85,7 @@ export default function SpinTheWheel() {
             Correct answer: <strong>{correctMovie}</strong>
             <br/>
             <a href="/result" className="btn btn-large">See Results</a>
-            <button className="btn btn-skip" style={{marginLeft:"10px"}} onClick={handleBack}>Back</button>
+            <BackButton style={{marginLeft: "10px"}} />
           </div>}
         </div>
       )}

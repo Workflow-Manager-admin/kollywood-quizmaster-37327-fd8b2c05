@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import './App.css';
 import './styles/Theme.css';
 import Navbar from './components/Navbar';
+import './styles/BackButton.css';
 import Login from './pages/Login';
 import Dashboard from './pages/Dashboard';
 import PosterGuess from './pages/PosterGuess';

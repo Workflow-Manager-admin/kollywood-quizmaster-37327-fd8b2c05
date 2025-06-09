@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { fetchObscureTamilMovies } from "../tmdbApi";
 import { useQuiz } from "../context/QuizContext";
 import "../styles/PosterGuess.css";
+import BackButton from "../components/BackButton";
 import { useNavigate } from "react-router-dom";
 
 /**
@@ -124,9 +125,7 @@ export default function PosterGuess() {
     }, 1200);
   }
 
-  function handleBack() {
-    navigate("/");
-  }
+  // BackButton handles the navigation
 
   if (loading)
     return <div className="game-loading">Loading game...</div>;
@@ -137,7 +136,7 @@ export default function PosterGuess() {
       <div className="game-complete">
         <div>🎉 All done!</div>
         <a href="/result" className="btn btn-large">See Results</a>
-        <button className="btn btn-large" onClick={handleBack} style={{marginLeft:"10px"}}>Back</button>
+        <BackButton style={{marginLeft: "10px"}} />
       </div>
     );
 
@@ -146,7 +145,7 @@ export default function PosterGuess() {
   return (
     <div className="poster-guess-game">
       <div className="quiz-title">Blurred Poster Guess</div>
-      <button className="btn btn-skip" style={{marginBottom: 10}} onClick={handleBack}>Back</button>
+      <BackButton />
       <div className="poster-container">
         {movie?.poster_path ? (
           <img

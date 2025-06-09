@@ -1,0 +1,7 @@
+.back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 1em;
+  font-weight: 500;
+}

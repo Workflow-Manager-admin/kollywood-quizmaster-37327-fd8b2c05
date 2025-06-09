@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { fetchPopularTamilMovies } from "../tmdbApi";
 import { useQuiz } from "../context/QuizContext";
 import "../styles/MovieBingo.css";
+import BackButton from "../components/BackButton";
 import { useNavigate } from "react-router-dom";
 
 // Demo categories for bingo
@@ -57,15 +58,12 @@ export default function MovieBingo() {
     finishQuiz(selected.length, { selected });
   }
 
-  const navigate = useNavigate();
-  function handleBack() {
-    navigate("/");
-  }
+  // No local back handler needed, using BackButton
 
   return (
     <div className="movie-bingo-game">
       <div className="quiz-title">Movie Bingo</div>
-      <button className="btn btn-skip" style={{marginBottom: 10}} onClick={handleBack}>Back</button>
+      <BackButton />
       <div className="bingo-grid">
         {movies.map((movie, idx) => (
           <div
