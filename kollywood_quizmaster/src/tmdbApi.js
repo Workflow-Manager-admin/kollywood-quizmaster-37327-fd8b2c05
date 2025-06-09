@@ -44,6 +44,8 @@ function getTmdbApiKey() {
  * Fetches popular Tamil (Kollywood) movies from TMDb.
  * Tamil language code: "ta"
  * @param {number} page - Pagination for results
+ *   - Page 1: most popular
+ *   - Pages 2-4: still popular, but more moderate
  * @returns {Promise<object>} Response JSON
  */
 export async function fetchPopularTamilMovies(page = 1) {
@@ -52,7 +54,7 @@ export async function fetchPopularTamilMovies(page = 1) {
     `${TMDB_BASE_URL}/discover/movie?` +
     `api_key=${apiKey}` +
     `&with_original_language=ta` +
-    `&sort_by=popularity.desc` +  // Most popular
+    `&sort_by=popularity.desc` +  // Most popular to less popular as pages increase
     `&page=${page}`;
 
   const response = await fetch(url);

@@ -28,11 +28,12 @@
 
 /* Extra hard blur */
 .blurred-poster-hard {
+  /* No longer used for easier mode! Blur effect reduced. */
   width: 98%;
   border-radius: 9px;
-  filter: blur(19px) brightness(.69) grayscale(.7) contrast(.7) opacity(0.91);
+  filter: blur(7px) brightness(.85) grayscale(.35) contrast(.85) opacity(0.98);
   margin-bottom: 10px;
-  box-shadow: 0 2px 14px rgba(0,0,0,0.18);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.13);
 }
 .clues-list { margin-bottom: 8px; }
 .clue {

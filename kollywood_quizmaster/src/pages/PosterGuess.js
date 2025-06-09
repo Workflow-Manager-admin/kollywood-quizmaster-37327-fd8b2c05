@@ -1,69 +1,64 @@
 import React, { useEffect, useState } from "react";
-import { fetchObscureTamilMovies, fetchMovieCredits } from "../tmdbApi";
+import { fetchPopularTamilMovies, fetchMovieCredits } from "../tmdbApi";
 import { useQuiz } from "../context/QuizContext";
 import "../styles/PosterGuess.css";
 import BackButton from "../components/BackButton";
 import { useNavigate } from "react-router-dom";
 
 /**
- * Generate more subtle/harder clues about the movie:
- * - Only year, length of title (not count all letters), one or two random inner letters, sometimes production co or runtime if available.
- * - Omit plot and genre completely.
- * - Occasionally obfuscate with a deliberately vague clue.
+ * Get easy and helpful clues for moderately popular movies:
+ * - Clue 1: Always actor name
+ * - Clue 2: Genre or overview keyword, always informational (never fake/obscure)
  */
-function getHardClues(movie) {
+function getHelpfulClues(movie) {
   const clues = [];
   if (!movie) return clues;
 
-  // Always: year
+  // Always: Release year as a small bonus
   if (movie.release_date) {
     const year = movie.release_date.slice(0, 4);
-    clues.push("Released in: " + year);
+    clues.push("Release year: " + year);
   }
-  // Give title letter count (no spaces) and a random letter (not first or last)
-  if (movie.title) {
-    const rawTitle = movie.title.replace(/[^a-zA-Z]/g, "");
-    const len = rawTitle.length;
-    // random mid-letter, exclude index 0 or last
-    let randomIdx = 1 + Math.floor(Math.random() * Math.max(1, len - 2));
-    if (len <= 2) randomIdx = 1;
-    let clueLetter = rawTitle[randomIdx] || "?";
-    // Use only when len > 2
-    if (len > 2) {
-      clues.push(`Title has ${len} letters; letter ${randomIdx + 1} is '${clueLetter.toUpperCase()}'`);
-    } else if (len > 0) {
-      clues.push(`Short title (${len} letters)`);
+
+  // Genre clue
+  if (Array.isArray(movie.genres) && movie.genres.length > 0) {
+    clues.push("Genre: " + movie.genres[0].name);
+  } else if (Array.isArray(movie.genre_ids) && movie.genre_ids.length > 0) {
+    // Not expanded, fallback to genre id map (Tamil genre id 10402=Music, 28=Action, 10751=Family, 18=Drama, etc.)
+    const genreMap = {
+      28: "Action", 10749: "Romance", 35: "Comedy", 80: "Crime",
+      18: "Drama", 10751: "Family", 27: "Horror", 53: "Thriller", 10402: "Music"
+    };
+    let g = genreMap[movie.genre_ids[0]];
+    if (g) clues.push("Genre: " + g);
+  }
+
+  // Overview/plot keyword
+  if (movie.overview) {
+    // Pick 1-2 keywords or summary words that help, not too obscure
+    const words = movie.overview.split(/[ .,!?\n]+/).filter(w => w && w.length > 4 && /^[A-Za-z]/.test(w));
+    if (words.length) {
+      // pick a random one, but deterministic for same question
+      const sel = words[Math.min(words.length - 1, Math.floor(words.length / 3))];
+      clues.push("Story keyword: " + sel);
     }
   }
-  // Extra subtle: Sometimes give production company name, if present
-  if (movie.production_companies && movie.production_companies.length > 0) {
-    // Reveal only the LAST word of first company (which is usually most generic)
-    const pc = movie.production_companies[0].name.split(" ");
-    clues.push("Production " + pc[pc.length - 1]);
-  }
-  // Rarely: runtime
-  if (movie.runtime && Math.random() < 0.4) {
-    clues.push("Runtime: about " + (movie.runtime > 95 ? "over 1.5 hrs" : "under 2 hrs"));
-  }
-  // With low chance add a fake out generic clue
-  if (Math.random() < 0.3) {
-    clues.push("Title starts with: '" + (movie.title ? movie.title[0].toUpperCase() : "?") + "'");
-  }
-  // No genre/overview clues
-  return clues;
+
+  return clues.slice(0, 1); // Only ONE secondary clue, not to overwhelm
 }
 
 /**
- * Fetches obscure Tamil movies and also fetches a main actor name (for the first clue) for each movie.
+ * Fetches moderately popular Tamil movies and also fetches a main actor name (for the first clue) for each movie.
  * Returns array of objects: [{...movie, actorClue: "<actor name or fallback>"}]
  */
-async function fetchHardPosterQuestionsWithActorClues() {
-  const randPage = Math.floor(Math.random() * 8) + 12; // pages 12-19 = more obscure
-  const res = await fetchObscureTamilMovies(randPage);
+async function fetchModeratePosterQuestionsWithActorClues() {
+  // Pages 1-2: popular, 3-5: moderate-popular; skip most obscure
+  const randPage = Math.floor(Math.random() * 3) + 2; // page 2-4 for moderate
+  const res = await fetchPopularTamilMovies(randPage);
   let candidates = (res.results || []).filter(
     m => m.poster_path && m.title && m.release_date
   );
-  // sample just 10 for speed
+  // Randomly sample just 10 for quiz speed and variety
   candidates = candidates.sort(() => 0.5 - Math.random()).slice(0, 10);
 
   // For each movie, fetch the main actor (first in cast if available)
@@ -74,15 +69,15 @@ async function fetchHardPosterQuestionsWithActorClues() {
         const credits = await fetchMovieCredits(movie.id);
         let clue;
         if (Array.isArray(credits.cast) && credits.cast.length > 0) {
-          // Sort by order (sometimes not guaranteed), pick first actor with profile
+          // Sort by order, pick first actor with profile
           const sorted = credits.cast.filter(x => !!x.name).sort((a, b) => (a.order ?? 999) - (b.order ?? 999));
           clue = sorted[0]?.name || "Actor information not available";
         } else {
           clue = "Actor information not available";
         }
-        return { ...movie, actorClue: clue };
+        return { ...movie, actorClue: clue, genres: movie.genres }; // propagate genres if available
       } catch {
-        return { ...movie, actorClue: "Actor information not available" };
+        return { ...movie, actorClue: "Actor information not available", genres: movie.genres };
       }
     })
   );
@@ -107,7 +102,7 @@ export default function PosterGuess() {
       setLoading(true);
       setApiError("");
       try {
-        const movies = await fetchHardPosterQuestionsWithActorClues();
+        const movies = await fetchModeratePosterQuestionsWithActorClues();
         setQuestions(movies);
       } catch (e) {
         setApiError(e.message || "Error fetching movies.");
@@ -163,11 +158,11 @@ export default function PosterGuess() {
 
   const movie = questions[qIndex];
 
-  // Compose clues: actor is always first hint, then the rest
+  // Compose clues: actor is always first hint, then a moderately helpful genre or keyword
   const clues = [
     movie?.actorClue ? `Actor: ${movie.actorClue}` : "Actor information not available",
-    ...getHardClues(movie)
-  ];
+    ...getHelpfulClues(movie)
+  ].slice(0, 2); // Only actor + 1 additional clue
 
   return (
     <div className="poster-guess-game">
@@ -178,7 +173,7 @@ export default function PosterGuess() {
           <img
             src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
             alt="Blurred Poster"
-            className="blurred-poster-hard"
+            className="blurred-poster"
           />
         ) : (
           <div className="no-poster">No Poster</div>
